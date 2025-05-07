@@ -89,6 +89,14 @@
   border-radius: 10px;
 }
 
+.social-mediaLink:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
 /* Credits */
 .attribution {
   font-size: 11px;
