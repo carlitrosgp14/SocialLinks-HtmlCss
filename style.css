@@ -1,0 +1,114 @@
+:root {
+  --font: "Inter", sans-serif;
+  --pageColor: hsl(0, 0%, 8%);
+  --cardColor: hsl(0, 0%, 12%);
+  --buttonColor: hsl(0, 0%, 20%);
+  --paragraphColor: #6b6b6b;
+  --paragraphFontSize: 0.875rem;
+  --AvatarNameFontSize: 1.75rem;
+  --spacing200: 1.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+}
+
+/* General container-background color and size and Flexbox model in place */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--pageColor);
+  /* overflow: hidden; */
+  scrollbar-width: none;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* formatting */
+  max-width: 90%;
+  width: 350px;
+  height: auto;
+  background-color: var(--cardColor);
+  padding: var(--spacing200);
+  margin: var(--spacing200);
+  gap: 1rem;
+
+  /* shape */
+  border-radius: 20px;
+}
+
+.card-container img {
+  width: 25%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.Bio-name {
+  color: hsl(0, 0%, 100%);
+  font-size: var(--AvatarNameFontSize);
+  font-weight: 700;
+}
+
+.Bio-location {
+  color: hsl(75, 94%, 57%);
+  font-size: var(--paragraphFontSize);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.Bio-slogan {
+  color: hsl(0, 0%, 100%);
+  font-size: var(--paragraphFontSize);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.social-mediaLink {
+  display: flex;
+  justify-content: center;
+  background-color: var(--buttonColor);
+  font-size: var(--paragraphFontSize);
+  color: hsl(0, 0%, 100%);
+  width: 90%;
+  height: auto;
+  padding: 1rem;
+
+  /* Ensures the text stands out */
+  font-weight: 600;
+
+  /* Optional: gives it a rounded shape */
+  border-radius: 10px;
+}
+
+/* Credits */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .card-container {
+    max-width: 90%;
+  }
+}
